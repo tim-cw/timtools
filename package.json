@@ -1,6 +1,6 @@
 {
   "name": "timtools",
-  "version": "1.5.2",
+  "version": "1.5.3",
   "private": true,
   "type": "module",
   "description": "Stack de développement frontend",
@@ -34,7 +34,6 @@
     "sass": "^1.90.0",
     "svg-spritemap-webpack-plugin": "^5.0.0",
     "webpack": "^5.101.1",
-    "webpack-notifier": "^1.15.0",
     "webpack-stream": "^7.0.0"
   },
   "browserslist": [

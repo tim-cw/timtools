@@ -12,7 +12,6 @@ import { paths } from './config.js';
 //import path from 'path';
 
 // Plugins
-import WebpackNotifierPlugin from 'webpack-notifier';
 import SVGSpritemapPlugin from 'svg-spritemap-webpack-plugin';
 
 const webpackConfig = {
@@ -66,9 +65,6 @@ const webpackConfig = {
       styles: {
         keepAttributes: false,
       },
-    }),
-    new WebpackNotifierPlugin({
-      skipFirstNotification: true,
     }),
   ],
 };
