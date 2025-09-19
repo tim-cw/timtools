@@ -4,12 +4,13 @@
  */
 
 import os from 'os';
+import { browsers } from '../browsers.js';
 
 // Dependencies
 import browserSync from 'browser-sync';
 
 // Config
-import { paths, browsers } from '../config.js';
+import { paths } from '../config.js';
 
 export function serve(cb) {
   browserSync.init({
