@@ -4,12 +4,6 @@ import os from 'os';
  *  Fichier de configuration
  */
 
-// Navigateurs pour BrowserSync
-export const browsers =
-  os.platform() == 'darwin'
-    ? ['google chrome' /*, 'firefox'*/] // osx
-    : ['chrome' /*, 'firefox'*/]; // windows
-
 // Paths (ne pas toucher)
 export const paths = {
   src: './src',
