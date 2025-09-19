@@ -34,7 +34,6 @@
     "sass": "1.92.1",
     "svg-spritemap-webpack-plugin": "5.0.1",
     "webpack": "5.101.3",
-    "webpack-notifier": "1.15.0",
     "webpack-stream": "7.0.0"
   },
   "browserslist": [
