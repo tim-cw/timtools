@@ -4,6 +4,7 @@
 
 // Dependencies
 import webpack from 'webpack';
+import path from 'path';
 
 // Config
 import { paths } from './config.js';
@@ -22,10 +23,27 @@ const webpackConfig = {
   },
   output: {
     filename: '[name].js',
+    path: path.resolve(paths.scripts.dest),
   },
 
   module: {
     rules: [],
+  },
+
+  optimization: {
+    splitChunks: {
+      cacheGroups: {
+        vendors: {
+          test: /[\\/]node_modules[\\/]/,
+          name: 'vendors',
+          chunks: 'all',
+        },
+      },
+    },
+  },
+
+  cache: {
+    type: 'filesystem',
   },
 
   plugins: [
